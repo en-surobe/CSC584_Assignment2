@@ -1,4 +1,8 @@
-public class ProfileBean {
+import java.io.Serializable;
+
+public class ProfileBean implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private String studentId;
     private String name;
@@ -7,7 +11,11 @@ public class ProfileBean {
     private String hobbies;
     private String introduction;
 
-    public ProfileBean() {}
+    // Default constructor
+    public ProfileBean() {
+    }
+
+    // Getters and Setters
 
     public String getStudentId() {
         return studentId;
